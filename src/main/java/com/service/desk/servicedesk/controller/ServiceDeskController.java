@@ -85,12 +85,12 @@ public class ServiceDeskController {
 				ticketInfo = ticketService.save(ticket);
 				return ticketInfo;
 			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			e.printStackTrace();
-		} catch (InvocationTargetException e) {
-			e.printStackTrace();
+		} catch (IOException ex) {
+			new ServiceDeskError(HttpStatus.INTERNAL_SERVER_ERROR, ex.getMessage(), ex);
+		} catch (IllegalAccessException ex) {
+			new ServiceDeskError(HttpStatus.INTERNAL_SERVER_ERROR, ex.getMessage(), ex);
+		} catch (InvocationTargetException ex) {
+			new ServiceDeskError(HttpStatus.INTERNAL_SERVER_ERROR, ex.getMessage(), ex);
 		}
 		return ticket;
 	}
