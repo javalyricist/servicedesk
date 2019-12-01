@@ -22,7 +22,7 @@ public class TicketDO {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long ticketId;
-	@Column(name = "RAISED_BY")
+	@Column(name = "RAISED_BY",nullable=true)
 	private String raisedBy;
 	@Column(name = "PROBLEM_TYPE")
 	@Enumerated(EnumType.STRING)
