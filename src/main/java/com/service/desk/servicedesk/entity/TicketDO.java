@@ -33,7 +33,7 @@ public class TicketDO {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "UPDATE_DT")
 	private Date updateDt;
-	@Column(name = "TECHNICIAN_ID",nullable=true)
+	@Column(name = "TECHNICIAN_ID")
 	private String technicianId;
 	@Column(name = "COMMENT")
 	private String comment;
@@ -41,7 +41,7 @@ public class TicketDO {
 	private Boolean statusInd;
 	@Column(name = "EXTERNAL_ID")
 	private String extenalId;
-	@Column(name = "SRC_SYSTEM_CODE")
+	@Column(name = "SRC_SYSTEM_CODE",nullable=true)
 	private String srcSystemCode;
 
 	public TicketDO() {
