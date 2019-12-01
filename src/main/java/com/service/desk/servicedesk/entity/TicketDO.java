@@ -33,7 +33,7 @@ public class TicketDO {
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "UPDATE_DT")
 	private Date updateDt;
-	@Column(name = "TECHNICIAN_ID")
+	@Column(name = "TECHNICIAN_ID",nullable=true)
 	private String technicianId;
 	@Column(name = "COMMENT")
 	private String comment;
