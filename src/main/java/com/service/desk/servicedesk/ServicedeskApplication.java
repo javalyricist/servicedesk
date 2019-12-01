@@ -11,6 +11,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class ServicedeskApplication {
 
 	public static void main(String[] args) {
+		
 		SpringApplication.run(ServicedeskApplication.class, args);
+
 	}
 }
