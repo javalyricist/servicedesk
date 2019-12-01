@@ -39,7 +39,7 @@ public class TicketDO {
 	private String comment;
 	@Column(name = "STATUS_IND")
 	private Boolean statusInd;
-	@Column(name = "EXTERNAL_ID")
+	@Column(name = "EXTERNAL_ID",nullable=true)
 	private String extenalId;
 	@Column(name = "SRC_SYSTEM_CODE",nullable=true)
 	private String srcSystemCode;
