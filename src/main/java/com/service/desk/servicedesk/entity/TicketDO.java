@@ -41,7 +41,7 @@ public class TicketDO {
 	private Boolean statusInd;
 	@Column(name = "EXTERNAL_ID")
 	private String extenalId;
-	@Column(name = "SRC_SYSTEM_CODE",nullable=true)
+	@Column(name = "SRC_SYSTEM_CODE")
 	private String srcSystemCode;
 
 	public TicketDO() {
