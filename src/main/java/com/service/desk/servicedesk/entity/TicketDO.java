@@ -24,7 +24,7 @@ public class TicketDO {
 	private Long ticketId;
 	@Column(name = "RAISED_BY")
 	private String raisedBy;
-	@Column(name = "PROBLEM_TYPE",length=20)
+	@Column(name = "PROBLEM_TYPE")
 	@Enumerated(EnumType.STRING)
 	private ServiceTypeEnum problemType;
 	@Temporal(TemporalType.TIMESTAMP)
